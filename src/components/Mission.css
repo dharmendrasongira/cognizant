@@ -1,57 +1,88 @@
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes cardRise {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes iconPulse {
-    0%, 100% {
-        transform: scale(1);
+/* Mission.css */
+.mission-text {
+    opacity: 0;
+    animation: fadeIn 1.2s ease-out forwards;
+  }
+  
+  .icon-container {
+    position: relative;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 9999px;
+    box-shadow: 0 10px 25px rgba(0, 0, 100, 0.1);
+    border: 4px solid #dbeafe;
+    transition: all 0.4s ease;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .globe-icon {
+    transition: transform 0.6s ease, color 0.3s ease;
+  }
+  
+  /* Explicit keyframes for floating animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
     }
     50% {
-        transform: scale(1.1);
+      transform: translateY(-20px);
     }
-}
-
-@keyframes cardHover {
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
     from {
-        transform: scale(1);
+      opacity: 0;
+      transform: translateY(20px);
     }
     to {
-        transform: scale(1.05);
+      opacity: 1;
+      transform: translateY(0);
     }
-}
-
-.animate-fade-in-up {
-    animation: fadeInUp 0.8s ease-out forwards;
-    opacity: 0;
-}
-
-.animate-card-rise {
-    animation: cardRise 0.6s ease-out forwards;
-    opacity: 0;
-}
-
-.animate-icon-pulse {
-    animation: iconPulse 2s ease-in-out infinite;
-}
-
-.animate-card-hover:hover {
-    animation: cardHover 0.3s ease-out forwards;
-}
+  }
+  
+  /* Hover effects */
+  .hover-highlight {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .hover-highlight:hover {
+    color: #3b82f6;
+    transform: translateX(5px);
+  }
+  
+  .hover-fade {
+    transition: all 0.3s ease;
+  }
+  
+  .hover-fade:hover {
+    color: #1e40af;
+    background-color: rgba(219, 234, 254, 0.4);
+    padding-left: 8px;
+    border-radius: 4px;
+  }
+  
+  .hover-item {
+    transition: all 0.3s ease;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .hover-item:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+    transform: translateX(5px);
+  }
+  
+  /* Icon container hover effect */
+  .icon-container:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 15px 30px rgba(59, 130, 246, 0.2);
+    transform: translateY(-5px) scale(1.05);
+  }
+  
+  .icon-container:hover .globe-icon {
+    transform: rotate(15deg) scale(1.1);
+    color: #2563eb;
+  }

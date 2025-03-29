@@ -20,7 +20,7 @@ const achievements = [
 
 const Achievements = () => {
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-20">
+    <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-40">
       <div className="container mx-auto px-4">
       <h2 className="text-4xl font-extrabold text-center text-blue-900 mb-16">
    Our<span className="text-blue-600"> Global Impact</span>

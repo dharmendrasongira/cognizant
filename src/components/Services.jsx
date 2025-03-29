@@ -42,7 +42,7 @@ const Services = () => {
 
   return (
    
-    <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-20 container mx-auto py-16 px-4">
+    <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-30 px-6 mx-auto ">
    
 
    <h2 className="text-4xl font-extrabold text-center text-blue-900 mb-16">

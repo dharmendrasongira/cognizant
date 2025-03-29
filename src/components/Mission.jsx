@@ -1,48 +1,53 @@
-import React from 'react';
-import { Target, Globe, Award } from 'lucide-react';
-import './Mission.css'; // We'll create a custom CSS file for animations
+
+import { Globe } from 'lucide-react';
+import './Mission.css';
 
 const Mission = () => {
-    return (
-        <section className="bg-gradient-to-br from-blue-50 to-blue-100  py-16 overflow-hidden">
-       
-            <div className="container mx-auto px-4">
-                <div className="text-center mb-12 animate-fade-in-up">
-                    <h2 className="text-4xl font-extrabold text-center text-blue-900 mb-16">Our <span className="text-blue-600">Mission</span></h2>
-                    <p className="text-gray-600 max-w-2xl mx-auto">
-                        We are committed to driving innovation, creating value, and making a positive impact in our industry and community.
-                    </p>
-                </div>
-                
-                <div className="grid md:grid-cols-3 gap-8">
-                    {/* Mission Values */}
-                    <div className="mission-card animate-card-rise hover:animate-card-hover text-center p-6 bg-gray-50 rounded-lg shadow-md transition-all duration-300 ease-in-out">
-                        <Target className="mx-auto mb-4 text-blue-600 animate-icon-pulse" size={48}/>
-                        <h3 className="text-xl font-semibold mb-3">Clear Vision</h3>
-                        <p className="text-gray-600">
-                            We maintain a laser-focused approach to our goals, continuously striving to exceed expectations and deliver exceptional results.
-                        </p>
-                    </div>
-                    
-                    <div className="mission-card animate-card-rise hover:animate-card-hover text-center p-6 bg-gray-50 rounded-lg shadow-md transition-all duration-300 ease-in-out delay-100">
-                        <Globe className="mx-auto mb-4 text-green-600 animate-icon-pulse" size={48}/>
-                        <h3 className="text-xl font-semibold mb-3">Global Impact</h3>
-                        <p className="text-gray-600">
-                            Our mission extends beyond boundaries, seeking to create meaningful change and contribute to global progress and innovation.
-                        </p>
-                    </div>
-                    
-                    <div className="mission-card animate-card-rise hover:animate-card-hover text-center p-6 bg-gray-50 rounded-lg shadow-md transition-all duration-300 ease-in-out delay-200">
-                        <Award className="mx-auto mb-4 text-purple-600 animate-icon-pulse" size={48}/>
-                        <h3 className="text-xl font-semibold mb-3">Excellence</h3>
-                        <p className="text-gray-600">
-                            We are dedicated to maintaining the highest standards of quality, integrity, and continuous improvement in everything we do.
-                        </p>
-                    </div>
-                </div>
+  return (
+    <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-30 overflow-hidden">
+      <div className="container mx-auto px-4">
+
+        <div className="flex flex-col md:flex-row items-center">
+          <div className="md:w-3/5 p-6 md:pr-16 mission-text">
+          <h2 className="text-4xl font-extrabold text-center text-blue-900 mb-12">Our <span className="text-blue-600">Mission</span></h2>
+        
+            <h3 className="text-3xl font-semibold mb-6 text-blue-900 hover-highlight">Global Impact</h3>
+            <p className="text-gray-700 text-lg mb-6 leading-relaxed hover-fade">
+              Our mission extends beyond conventional boundaries, seeking to create meaningful change and contribute to global progress through innovative solutions and collaborative partnerships.
+            </p>
+            <p className="text-gray-600 mb-6 hover-fade">
+              We believe in fostering connections across cultures and markets to build solutions that address universal challenges while respecting local contexts and needs.
+            </p>
+            <p className="text-gray-600 mb-6 hover-fade">
+              By combining cutting-edge technology with human-centered design, we aim to develop products and services that not only solve problems but also enhance lives and communities around the world.
+            </p>
+            <div className="mt-8">
+              <h4 className="text-xl font-medium text-blue-800 mb-4 hover-highlight">Our Commitment</h4>
+              <ul className="space-y-3 text-gray-600">
+                <li className="flex items-start hover-item">
+                  <span className="text-blue-500 mr-2">•</span>
+                  <span>Sustainable development practices that preserve resources for future generations</span>
+                </li>
+                <li className="flex items-start hover-item">
+                  <span className="text-blue-500 mr-2">•</span>
+                  <span>Ethical business conduct that prioritizes transparency and accountability</span>
+                </li>
+                <li className="flex items-start hover-item">
+                  <span className="text-blue-500 mr-2">•</span>
+                  <span>Inclusive innovation that considers diverse perspectives and needs</span>
+                </li>
+              </ul>
             </div>
-        </section>
-    );
+          </div>
+          <div className="md:w-2/5 flex justify-center p-6">
+            <div className="icon-container">
+              <Globe className="text-blue-600 globe-icon" size={120} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Mission;
