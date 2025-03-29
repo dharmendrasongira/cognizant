@@ -9,7 +9,8 @@ import Testimonials from '../components/Testimonials';
 import TeamSection from '../components/TeamSection';
 
 import Footer from '../components/Footer';
-import ContactForm from '../components/ContactForm.Jsx';
+import ContactForm from '../components/ContactForm';
+
 import Mission from '../components/Mission';
 import Navbar from '../components/Navbar';
 const HomePage = () => {
