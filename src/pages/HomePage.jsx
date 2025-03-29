@@ -6,7 +6,8 @@ import 'swiper/css/pagination';
 import Achievements from '../components/Achievements';
 import Hero from '../components/Hero';
 import Testimonials from '../components/Testimonials';
-import  TeamSection from '../components/Teamsection';
+import TeamSection from '../components/TeamSection';
+
 import Footer from '../components/Footer';
 import ContactForm from '../components/ContactForm.Jsx';
 import Mission from '../components/Mission';
