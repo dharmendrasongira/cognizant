@@ -4,7 +4,7 @@ import './Footer.css'; // We'll create a custom CSS file for animations
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-800 text-white py-12 animate-footer-enter">
+    <footer className="bg-black text-white py-12 animate-footer-enter">
       <div className="container mx-auto px-4 grid md:grid-cols-3 gap-8">
         <div className="animate-slide-in-left">
           <h3 className="text-xl font-bold mb-4 animate-fade-in">Cognizant</h3>

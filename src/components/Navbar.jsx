@@ -9,9 +9,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 text-white p-4 shadow-md">
+<nav className="bg-black text-white p-4 shadow-[0px_4px_10px_white] mb-[0.5px]">
+
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold">Cognizant</div>
+        <div className="text-2xl font-bold">Solura Technologies</div>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
@@ -22,10 +23,10 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-6">
-          <li className="hover:text-blue-200 transition cursor-pointer">Home</li>
-          <li className="hover:text-blue-200 transition cursor-pointer">About</li>
-          <li className="hover:text-blue-200 transition cursor-pointer">Services</li>
-          <li className="hover:text-blue-200 transition cursor-pointer">Contact</li>
+          <li className="cursor-pointer">Home</li>
+          <li className="cursor-pointer">About</li>
+          <li className="cursor-pointer">Services</li>
+          <li className="cursor-pointer">Contact</li>
         </ul>
 
         {/* Mobile Menu */}

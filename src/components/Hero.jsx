@@ -22,7 +22,6 @@ const Hero = () => {
         <h1
           className={cn(
             "text-4xl md:text-6xl font-bold mb-6 text-white transition-transform",
-            "hover:scale-105 hover:text-blue-300"
           )}
         >
           Innovate. Transform. Succeed.
@@ -34,10 +33,9 @@ const Hero = () => {
 
         <div className="flex justify-center">
           <a
-            href="/contact"
             className={cn(
-              "flex items-center space-x-2 bg-white text-blue-600 px-8 py-3 rounded-full",
-              "font-semibold hover:bg-blue-50 transition transform hover:scale-110 hover:shadow-lg",
+              "flex items-center space-x-2 bg-white text-black px-8 py-3 rounded-full",
+              "font-semibold hover:bg-gray-200 transition transform  hover:shadow-lg",
               "group relative z-30"
             )}
           >
@@ -46,6 +44,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
+      
     </section>
   );
 };

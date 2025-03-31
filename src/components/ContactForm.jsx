@@ -74,17 +74,17 @@ const ContactForm = () => {
   const employeeOptions = ['1-10', '11-50', '51-200', '201-500', '500+'];
 
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-20">
+    <section className="bg-gray-100 py-20">
       <div className="container mx-auto px-4 max-w-2xl">
-        <h2 className="text-4xl font-extrabold text-center text-blue-900 mb-16">
-          Get in <span className="text-blue-600"> Touch</span>
+        <h2 className="text-4xl font-extrabold text-center text-black mb-16">
+          Get in <span className="text-gray-500"> Touch</span>
         </h2>
 
         <form onSubmit={handleSubmit} className="bg-white p-8 rounded-xl shadow-2xl">
           {/* Name Input */}
           {['name', 'email', 'phone', 'company'].map((field) => (
             <div key={field} className="mb-6">
-              <label htmlFor={field} className="block mb-2 text-sm font-medium text-blue-900">
+              <label htmlFor={field} className="block mb-2 text-sm font-medium text-black">
                 {field.charAt(0).toUpperCase() + field.slice(1)}
               </label>
               <input
@@ -106,7 +106,7 @@ const ContactForm = () => {
 
           {/* Employees Dropdown */}
           <div className="mb-6">
-            <label htmlFor="employees" className="block mb-2 text-sm font-medium text-blue-900">
+            <label htmlFor="employees" className="block mb-2 text-sm font-medium text-black">
               Number of Employees
             </label>
             <select
@@ -133,7 +133,7 @@ const ContactForm = () => {
 
           {/* Message Input */}
           <div className="mb-6">
-            <label htmlFor="message" className="block mb-2 text-sm font-medium text-blue-900">
+            <label htmlFor="message" className="block mb-2 text-sm font-medium text-black">
               Message
             </label>
             <textarea
@@ -158,7 +158,7 @@ const ContactForm = () => {
             type="submit"
             disabled={submitStatus === 'success'}
             className={`w-full py-3 rounded-lg transition duration-300 ${
-              submitStatus === 'success' ? 'bg-green-500 text-white cursor-not-allowed' : 'bg-blue-600 text-white hover:bg-blue-700'
+              submitStatus === 'success' ? 'bg-green-500 text-white cursor-not-allowed' : 'bg-black text-white '
             }`}
           >
             {submitStatus === 'success' ? (

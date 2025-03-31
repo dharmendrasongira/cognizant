@@ -51,10 +51,10 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-20">
+    <section className="bg-white py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-extrabold text-center text-blue-900 mb-16 tracking-tight">
-          Client <span className="text-blue-600">Testimonials</span>
+        <h2 className="text-4xl font-extrabold text-center text-black mb-16 tracking-tight">
+          Client <span className="text-gray-500">Testimonials</span>
         </h2>
         
         <div className="relative max-w-3xl mx-auto">
@@ -67,7 +67,7 @@ const Testimonials = () => {
               transition-all duration-300 ease-in-out 
               disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            <ChevronLeft className="text-blue-800" />
+            <ChevronLeft className="text-black" />
           </button>
           <button 
             onClick={nextSlide} 
@@ -77,7 +77,7 @@ const Testimonials = () => {
               transition-all duration-300 ease-in-out 
               disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            <ChevronRight className="text-blue-800" />
+            <ChevronRight className="text-black" />
           </button>
 
           {/* Testimonial Slide */}
@@ -109,8 +109,8 @@ const Testimonials = () => {
                   {testimonial.review}
                 </p>
                 <div>
-                  <h4 className="font-bold text-xl text-blue-900">{testimonial.name}</h4>
-                  <p className="text-blue-700 font-medium">{testimonial.role}</p>
+                  <h4 className="font-bold text-xl text-black">{testimonial.name}</h4>
+                  <p className="text-black font-medium">{testimonial.role}</p>
                 </div>
               </div>
             ))}
@@ -124,8 +124,8 @@ const Testimonials = () => {
                 onClick={() => !isAnimating && setCurrentSlide(index)}
                 className={`w-4 h-4 rounded-full transition-all duration-300 
                   ${index === currentSlide 
-                    ? 'bg-blue-600 w-8' 
-                    : 'bg-blue-300 hover:bg-blue-400'
+                    ? 'bg-gray-600 w-8' 
+                    : 'bg-gray-300 hover:bg-gray-400'
                   }`}
               />
             ))}

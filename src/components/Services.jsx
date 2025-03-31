@@ -42,11 +42,11 @@ const Services = () => {
 
   return (
    
-    <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-30 px-6 mx-auto ">
+    <section className="bg-white py-30 px-6 mx-auto ">
    
 
-   <h2 className="text-4xl font-extrabold text-center text-blue-900 mb-16">
-   Our<span className="text-blue-600"> Services</span>
+   <h2 className="text-4xl font-extrabold text-center text-black mb-16">
+   Our<span className="text-gray-500"> Services</span>
         </h2>
     
 

@@ -20,14 +20,14 @@ const HomePage = () => {
     <div className="bg-gray-50">
   
       <Navbar/>
-       <Hero/>
-       <Services/>
-       <Mission/>
-       <TeamSection/>
-       <Achievements/>
-       <Testimonials/>
-       <ContactForm/>
-       <Footer/>
+      <Hero/>
+      <Services/>
+      <Mission/>
+      <TeamSection/>
+      <Achievements/>
+      <Testimonials/>
+      <ContactForm/>
+      <Footer/>
    
      
     </div>

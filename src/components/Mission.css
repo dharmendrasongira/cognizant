@@ -49,7 +49,7 @@
   }
   
   .hover-highlight:hover {
-    color: #3b82f6;
+    color: black;
     transform: translateX(5px);
   }
   
@@ -58,7 +58,7 @@
   }
   
   .hover-fade:hover {
-    color: #1e40af;
+    color: black;
     background-color: rgba(219, 234, 254, 0.4);
     padding-left: 8px;
     border-radius: 4px;
@@ -77,12 +77,12 @@
   
   /* Icon container hover effect */
   .icon-container:hover {
-    border-color: #3b82f6;
+    border-color: black;
     box-shadow: 0 15px 30px rgba(59, 130, 246, 0.2);
     transform: translateY(-5px) scale(1.05);
   }
   
   .icon-container:hover .globe-icon {
     transform: rotate(15deg) scale(1.1);
-    color: #2563eb;
+    color: black;
   }
